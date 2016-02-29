@@ -1,7 +1,7 @@
   <div class="foot">
     <div class="copy">
       <ul>
-        <li><a href="<?php $this->options->siteurl(); ?>">Copyright &copy; 2012 <?php $this->options->title(); ?></a></li>
+        <li><a href="<?php $this->options->siteurl(); ?>">Copyright &copy; <?php  echo date('Y');?> <?php $this->options->title(); ?></a></li>
         <li>/</li>
         <li><a href="http://www.typecho.org">powered by Typecho</a></li>
        <!-- <li>/</li>-->
