@@ -1,154 +1,86 @@
-/* Atelier Seaside Light by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/seaside/) */
-
-/* plain text */
+/* Pretty printing styles. Used with prettify.js.
+ *
+ * This version is slight modified based on the original version.
+ *
+ * Name:	Stanley Ng
+ * Email: 	stanleyhlng@googlegroups.com
+ * 
+ * Reference:
+ * http://code.google.com/p/google-code-prettify/source/browse/trunk/src/prettify.css
+ */
 .pln {
-  color: #131513;
-}
+  color: #000; }
 
-@media screen {
-  /* string content */
-  .str {
-    color: #29a329;
-  }
+.str {
+  color: #080; }
 
-  /* a keyword */
-  .kwd {
-    color: #ad2bee;
-  }
+.kwd {
+  color: #008;
+  font-weight: bold; }
 
-  /* a comment */
-  .com {
-    color: #809980;
-  }
+.com {
+  color: #800;
+  font-style: italic; }
 
-  /* a type name */
-  .typ {
-    color: #3d62f5;
-  }
+.typ {
+  color: #606;
+  font-weight: bold; }
 
-  /* a literal value */
-  .lit {
-    color: #87711d;
-  }
+.lit {
+  color: #066; }
 
-  /* punctuation */
-  .pun {
-    color: #131513;
-  }
+.pun {
+  color: #660; }
 
-  /* lisp open bracket */
-  .opn {
-    color: #131513;
-  }
+.opn {
+  color: #660; }
 
-  /* lisp close bracket */
-  .clo {
-    color: #131513;
-  }
+.clo {
+  color: #660; }
 
-  /* a markup tag name */
-  .tag {
-    color: #e6193c;
-  }
+.tag {
+  color: #008;
+  font-weight: bold; }
 
-  /* a markup attribute name */
-  .atn {
-    color: #87711d;
-  }
+.atn {
+  color: #606; }
 
-  /* a markup attribute value */
-  .atv {
-    color: #1999b3;
-  }
+.atv {
+  color: #080; }
 
-  /* a declaration */
-  .dec {
-    color: #87711d;
-  }
+.dec {
+  color: #606; }
 
-  /* a variable name */
-  .var {
-    color: #e6193c;
-  }
+.var {
+  color: #606; }
 
-  /* a function name */
-  .fun {
-    color: #3d62f5;
-  }
-}
-/* Use higher contrast and text-weight for printable form. */
-@media print, projection {
-  .str {
-    color: #006600;
-  }
+.fun {
+  color: red; }
 
-  .kwd {
-    color: #006;
-    font-weight: bold;
-  }
-
-  .com {
-    color: #600;
-    font-style: italic;
-  }
-
-  .typ {
-    color: #404;
-    font-weight: bold;
-  }
-
-  .lit {
-    color: #004444;
-  }
-
-  .pun, .opn, .clo {
-    color: #444400;
-  }
-
-  .tag {
-    color: #006;
-    font-weight: bold;
-  }
-
-  .atn {
-    color: #440044;
-  }
-
-  .atv {
-    color: #006600;
-  }
-}
-/* Style */
+/* Put a border around prettyprinted code snippets. */
 pre.prettyprint {
-  background: #f4fbf4;
-  color: #8ca68c;
-  font-family: Menlo, Consolas, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, monospace;
-  font-size: 12px;
-  line-height: 1.5;
-  border: 1px solid #cfe8cf;
   padding: 10px;
-  /* border-radius: 3px; */
-}
+  border: 1px solid #eee; }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  margin: 0 0 0 40px; }
 
-/* IE indents via margin-left */
+ol.linenums li {
+  color: #BEBEC5;
+  line-height: 18px;
+  padding-left: 12px;
+  text-shadow: 0 1px 0 #FFFFFF; }
+
 li.L0,
 li.L1,
 li.L2,
 li.L3,
-li.L4,
 li.L5,
 li.L6,
 li.L7,
-li.L8,
-li.L9 {
-  /* */
-}
+li.L8 {
+  list-style-type: normal; }
 
 /* Alternate shading for lines */
 li.L1,
@@ -156,5 +88,5 @@ li.L3,
 li.L5,
 li.L7,
 li.L9 {
-  /* */
-}
+  background: #eee; }
+
