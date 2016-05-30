@@ -288,7 +288,7 @@ class Widget_Metas_Category_List extends Widget_Abstract_Metas
             'wrapClass'         =>  '',
             'itemTag'           =>  'li',
             'itemClass'         =>  '',
-            'showCount'         =>  false,
+            'showCount'         =>  true,
             'showFeed'          =>  false,
             'countTemplate'     =>  '(%d)',
             'feedTemplate'      =>  '<a href="%s">RSS</a>'
