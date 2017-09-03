@@ -24,4 +24,3 @@ Typecho_Router::dispatch();
 
 /** 注册一个结束插件 */
 Typecho_Plugin::factory('index.php')->end();
-
